@@ -315,17 +315,147 @@ a {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+/*==== Screen Menu ====*/
+.navigation {
+  margin-top: auto;
+  margin-bottom: auto;
 
-/*==== Scrollbar Style ====*/
-::-webkit-scrollbar {
-  width: 10px;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
 }
-::-webkit-scrollbar-track {
-  background: #00532b15;
+
+.navigation li {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-::-webkit-scrollbar-thumb {
-  background: #0c7e5c;
-  border-radius: 50px;
+
+.navigation a {
+  color: white;
+  font-size: 20px;
+
+  transition: 0.5s;
+}
+
+.navigation a:hover {
+  color: var(--base-color-black);
+  font-size: 23px;
+}
+
+.screenMenu {
+  width: 0;
+  height: 100%;
+  background-color: var(--base-color);
+  box-shadow: 0px 2px 5px var(--shadow-color-1);
+  overflow: hidden;
+
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  display: grid;
+  justify-content: center;
+
+  transition: width 0.3s;
 }
 
 /*==== Responsive Desktop ====*/
+@media (min-width: 1200px) {
+  p {
+    display: block;
+    position: relative;
+    justify-content: center;
+
+    width: 60%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+
+    text-align: center;
+  }
+
+  .divider {
+    width: 60%;
+    height: 2px;
+    background-color: var(--base-color);
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: grid;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .backgroundImage1 {
+    width: 85vh;
+    height: 57vh;
+    border-radius: 10px;
+    background-color: var(--base-color-shadow);
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    display: grid;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .image1 img {
+    width: 90vh;
+    border-radius: 10px;
+  }
+
+  .backgroundImage2 {
+    width: 82vh;
+    height: 47vh;
+    border-radius: 10px;
+    background-color: var(--base-color-shadow);
+
+    display: flex grid;
+    position: relative;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+  }
+
+  .image3 {
+    display: flex grid;
+    position: relative;
+
+    border-radius: 10px;
+
+    width: 85vh;
+    height: 50vh;
+  }
+
+  /*==== Scrollbar Style ====*/
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #00532b15;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0c7e5c;
+    border-radius: 50px;
+  }
+}
