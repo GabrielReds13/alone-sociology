@@ -27,11 +27,23 @@
         </ul>
       </div>
       <div class="options">
-        <img src="./sources/Hamburguer.svg" alt="Menu" />
+        <a href="#menuRight" onclick="openMenuRight()">
+          <img src="./sources/Hamburguer.svg" alt="Menu" />
+        </a>
       </div>
     </header>
 
     <!-- Content -->
+    <nav class="screenMenu" id="menuRight">
+      <ul class="navigation">
+        <li><a href="#home" onclick="closeMenuRight()">Início</a></li>
+        <li><a href="#interview" onclick="closeMenuRight()">Entrevista</a></li>
+        <li>
+          <a href="#statistics" onclick="closeMenuRight()">Estatísticas</a>
+        </li>
+        <li><a href="#cureAlone" onclick="closeMenuRight()">Cura</a></li>
+      </ul>
+    </nav>
     <main>
       <!-- Section 1 -->
       <section class="section" id="home">
@@ -39,14 +51,14 @@
           <div class="text">
             <h2 class="titleSection">O'que é solidão?</h2>
           </div>
-          <div class="image1 backgroundImage1">
+          <div class="image1 backgroundImage1 flexPc">
             <img
               class="image1"
               src="https://images.unsplash.com/photo-1473830394358-91588751b241?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870"
               alt="Mulher sozinha na janela."
             />
           </div>
-          <div class="text">
+          <div class="text flexPc">
             <p class="description marginText">
               A solidão é um termo usado para o sentimento de separação ou
               isolamento da sociedade. Geralmente ela está associada a um dos
@@ -98,14 +110,14 @@
           <div class="text">
             <h2 class="titleSection">Dados para argumentar</h2>
           </div>
-          <div class="configBack">
+          <div class="configBack flexPc">
             <img
               class="image2"
               src="https://media.discordapp.net/attachments/840036120771166222/979559096770506802/dadosPesquisa.png?width=528&height=434"
               alt="Ranking de países com mais solidão durante a pandemia."
             />
           </div>
-          <div class="text">
+          <div class="text flexPc">
             <p class="description marginText">
               <q title="BCC NEWS | Brasil">
                 No gráfico acima temos um ranking de alguns países que tiveram
