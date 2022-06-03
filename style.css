@@ -1,0 +1,476 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+}
+
+/*==== Colors ====*/
+:root {
+  /* colors White */
+  /* Base Colors*/
+  --base-color: #39a048;
+  --base-color-black: #00532b;
+  --base-color-second: #cd2027;
+  --base-color-shadow: #39a0486c;
+
+  /* Secondary Colors */
+  --shadow-color-1: #00532b15;
+  --shadow-color-2: #00532b30;
+  --shadow-color-solid: #d9e5df;
+
+  /* Text Colors */
+  --camp-text-color: #b3cbbf;
+  --text-color: #9e9e9e;
+  --text-link-color: #39a048;
+  --title-color: #000000;
+}
+
+/*==== Header Style ====*/
+header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+
+  box-shadow: 0px 2px 5px var(--shadow-color-1);
+  padding: 15px 15px;
+
+  font-family: 'Inter', sans-serif;
+
+  z-index: 3;
+  position: fixed;
+  display: grid;
+}
+
+/*==== Header Logo ====*/
+
+.pageLogo {
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+
+  position: fixed;
+  top: 11px;
+  justify-content: baseline;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.spanText {
+  color: var(--base-color);
+}
+
+/*==== Header ====*/
+.alignHeader {
+  box-sizing: border-box;
+}
+
+.alignHeader {
+  justify-content: space-between !important;
+  display: flex;
+}
+
+/*==== Header Menu ====*/
+.options {
+  padding: 5px;
+}
+
+.options img {
+  width: 24px;
+  height: 20px;
+}
+
+/*==== Main ====*/
+main {
+  z-index: 1;
+  position: relative;
+  display: grid;
+
+  top: 15vh;
+
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  width: auto;
+}
+
+.section {
+  justify-content: center;
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titleSection {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: block;
+
+  text-align: center;
+}
+.description {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: grid;
+}
+.marginText {
+  margin-top: 2em;
+}
+p {
+  display: block;
+  position: relative;
+  justify-content: center;
+
+  width: 80%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+
+  text-align: center;
+}
+/*==== Divider ====*/
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: var(--base-color);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  display: grid;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*==== Section 1 ====*/
+
+.backgroundImage1 {
+  width: 45vh;
+  height: 30vh;
+  border-radius: 10px;
+  background-color: var(--base-color-shadow);
+
+  padding-left: 10px;
+  padding-top: 10px;
+
+  display: grid;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image1 img {
+  width: 50vh;
+  border-radius: 10px;
+}
+/*==== Section 2 ====*/
+
+.documentVideo {
+  width: 25em;
+  height: 15em;
+  position: relative;
+  display: grid;
+}
+.video1 {
+  width: 100%;
+  height: auto;
+
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+/*==== Section 3 ====*/
+
+.configBack {
+  width: auto;
+  height: 50vh;
+
+  display: flex;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+}
+
+.image2 {
+  display: flex;
+  position: relative;
+  width: 55vh;
+  height: 50vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reference {
+  color: var(--base-color);
+}
+
+/*==== Section 4 ====*/
+.backgroundImage2 {
+  width: 52vh;
+  height: 27vh;
+  border-radius: 10px;
+  background-color: var(--base-color-shadow);
+
+  display: flex grid;
+  position: relative;
+
+  padding-left: 10px;
+  padding-top: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+}
+
+.image3 {
+  display: flex grid;
+  position: relative;
+
+  border-radius: 10px;
+
+  width: 55vh;
+  height: 30vh;
+}
+
+/*==== Section 5 ====*/
+.cardCreditis {
+  width: 50vh;
+  height: auto;
+
+  display: flex;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+
+  box-shadow: 0px 0px 5px var(--shadow-color-1);
+
+  border-top: 4px solid var(--base-color);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.notStyleList {
+  list-style: none;
+}
+
+.inlineText {
+  display: block;
+  position: relative;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+
+  text-align: left;
+}
+
+/*==== Footer ====*/
+.footerConfig {
+  width: auto;
+  height: auto;
+
+  margin-top: 3em;
+
+  background-color: var(--base-color);
+
+  display: grid;
+  position: relative;
+  justify-content: center;
+}
+
+.titleFooter {
+  color: white;
+
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/*==== Screen Menu ====*/
+.navigation {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navigation a {
+  color: white;
+  font-size: 20px;
+
+  transition: 0.5s;
+}
+
+.navigation a:hover {
+  color: var(--base-color-black);
+  font-size: 23px;
+}
+
+.screenMenu {
+  width: 0;
+  height: 100vh;
+  background-color: var(--base-color);
+  box-shadow: 0px 2px 5px var(--shadow-color-1);
+  overflow: hidden;
+
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  display: grid;
+  justify-content: center;
+
+  transition: width 0.3s;
+}
+
+nav .screenMenu {
+  overflow: hidden;
+}
+
+/*==== Responsive Desktop ====*/
+@media (min-width: 1200px) {
+  p {
+    display: block;
+    position: relative;
+    justify-content: center;
+
+    width: 60%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+
+    text-align: center;
+  }
+
+  .divider {
+    width: 60%;
+    height: 2px;
+    background-color: var(--base-color);
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: grid;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .backgroundImage1 {
+    width: 85vh;
+    height: 57vh;
+    border-radius: 10px;
+    background-color: var(--base-color-shadow);
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    display: grid;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .image1 img {
+    width: 90vh;
+    border-radius: 10px;
+  }
+
+  .backgroundImage2 {
+    width: 82vh;
+    height: 47vh;
+    border-radius: 10px;
+    background-color: var(--base-color-shadow);
+
+    display: flex grid;
+    position: relative;
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+  }
+
+  .image3 {
+    display: flex grid;
+    position: relative;
+
+    border-radius: 10px;
+
+    width: 85vh;
+    height: 50vh;
+  }
+
+  /*==== Scrollbar Style ====*/
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #00532b15;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0c7e5c;
+    border-radius: 50px;
+  }
+}
+
+/* Scroll Reveal*/
+.titleSection,
+.description,
+.image1,
+.video1,
+.configBack,
+.backgroundImage2,
+.cardCreditis {
+  visibility: hidden;
+}
