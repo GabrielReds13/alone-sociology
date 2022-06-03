@@ -450,6 +450,20 @@ nav .screenMenu {
     width: 85vh;
     height: 50vh;
   }
+    .documentVideo {
+    width: 50em;
+    height: 30em;
+    position: relative;
+    display: grid;
+  }
+  .video1 {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    display: grid;
+    justify-content: center;
+  }
 
   /*==== Scrollbar Style ====*/
   ::-webkit-scrollbar {
